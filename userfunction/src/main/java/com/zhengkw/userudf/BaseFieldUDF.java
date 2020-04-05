@@ -1,6 +1,7 @@
 package com.zhengkw.userudf;
 
 import org.apache.commons.lang.StringUtils;
+import org.apache.hadoop.hive.ql.exec.UDF;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -12,7 +13,7 @@ import org.json.JSONObject;
  * @version:1.0
  * @since: jdk 1.8
  */
-public class BaseFieldUDF {
+public class BaseFieldUDF extends UDF {
     public String evaluate(String line, String key) throws JSONException, JSONException {
 
         String[] log = line.split("\\|");
