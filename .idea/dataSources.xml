@@ -7,5 +7,11 @@
       <jdbc-driver>org.apache.hive.jdbc.HiveDriver</jdbc-driver>
       <jdbc-url>jdbc:hive2://hadoop102:10000</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="shuchang" uuid="e9ca11c6-9975-41cd-bb53-5ed166f4d3c2">
+      <driver-ref>hive</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.apache.hive.jdbc.HiveDriver</jdbc-driver>
+      <jdbc-url>jdbc:hive2://hadoop102:10000</jdbc-url>
+    </data-source>
   </component>
 </project>
